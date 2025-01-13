@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text to Image Generator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="assets/favicon.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="description-header">
+            <img src="assets/favicon.png" alt="Logo" class="logo">
+            <h1>Text to Image Generator</h1>
+        </div>
+        <p class="description">
+            Enter a description below to generate an image URL based on your text. This tool uses AI-based image generation technology.
+        </p>
+    
+        <form id="imageForm">
+            <label for="textInput">Enter description to generate image:</label>
+            <textarea id="textInput" rows="4" placeholder="Type a description..."></textarea>
+            <button type="submit">Generate Image</button>
+            <button type="reset" id="resetButton">Reset</button>
+        </form>
+        <div id="successMessage" style="display:none; color: green; font-size: 18px;">
+            Image generated successfully!
+        </div>
+        
+        <img id="generatedImage" src="" alt="Generated Image" style="display:none; width: 100%; max-width: 600px; margin-top: 20px;" />
+        
+        <!-- Spinner Element -->
+        <div id="spinner" class="spinner"></div>
+    </div>
+    
+    <div class="about-section">
+        <h2>About the Free Image Generator</h2>
+        <p>
+            Welcome to the Free Image Generator powered by Pollinations.ai. This tool allows you to generate unique images based on the text descriptions you provide, utilizing advanced AI algorithms from Pollinations.ai. Enter a description above, and the tool will generate an image URL matching your input.
+            <br><br>
+            Developer: <strong>Piyush Suteri</strong>
+        </p>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <a href="https://youtube.com/@piyushsuteri" target="_blank" class="yt-link">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/e/ef/Youtube_logo.png" alt="YouTube" class="yt-logo">
+                My YouTube Channel
+            </a>
+            <p class="contact-info">
+                Contact: <a href="mailto:piyushsuteri5286@outlook.com" class="email">piyushsuteri5286@outlook.com</a>
+            </p>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
